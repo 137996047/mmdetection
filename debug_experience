@@ -1,0 +1,6 @@
+
+1. 如何安装？
+ 如果已经安装了maskrcnn-benchmark，pytorch_nightly 版本，安装maskrcnn-benchmark就很简单了。
+ 只需要安装一个mmcv，然后从步骤c执行到步骤e就行了，就这么简单。
+ 安装的同时可以把数据集的软连接给设置好，这样跑模型就一步到位了。
+ 
