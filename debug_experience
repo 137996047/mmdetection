@@ -4,3 +4,8 @@
  只需要安装一个mmcv，然后从步骤c执行到步骤e就行了，就这么简单。
  安装的同时可以把数据集的软连接给设置好，这样跑模型就一步到位了。
  
+2.在FPN的backbone参数配置里rpn_head={ anchor_scales=[8],}， 为啥就8一个scale呢？
+
+
+3. 在FPN的backbone参数配置里rpn_head={anchor_strides=[4, 8, 16, 32, 64],}但是
+   bbox_roi_extractor={featmap_strides=[4, 8, 16, 32]),}里为啥没有64？
