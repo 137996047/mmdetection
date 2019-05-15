@@ -12,3 +12,12 @@
    具体答案还得在FPN的论文里找。
    https://github.com/open-mmlab/mmdetection/issues/614
    https://blog.csdn.net/u013565669/article/details/86750809
+
+
+4. copy_if failed to synchronize: device-side assert triggered
+   是因为config中的num_classes == my_dataset 中的CLASSES的数量 + 1， 所以有两个原因:
+   a. num_classes的数没写对忘了加1
+   b. my_dataset中CLASSES里面的label拼写错了，必须和coco格式里面的label都对应上，不能随便写。
+   
+   
+   
