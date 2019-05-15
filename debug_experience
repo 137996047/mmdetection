@@ -15,9 +15,10 @@
 
 
 4. copy_if failed to synchronize: device-side assert triggered
-   是因为config中的num_classes == my_dataset 中的CLASSES的数量 + 1， 所以有两个原因:
+   是因为config中的num_classes == my_dataset 中的CLASSES的数量 + 1， 所以有三个原因:
    a. num_classes的数没写对忘了加1
    b. my_dataset中CLASSES里面的label拼写错了，必须和coco格式里面的label都对应上，不能随便写。
+   c. 如果上面两个正确，还出现这个问题，那就有可能自己数据集根本没有拷贝过来，还是用的原来COCO人家的数据集。
    
    
    
