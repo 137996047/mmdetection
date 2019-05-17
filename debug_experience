@@ -21,9 +21,10 @@
    
 5. 采用dist_train多GPU训练和单GPU训练的ETA基本相同，这是为什么呢？
    https://github.com/open-mmlab/mmdetection/issues/504
+   采用多GPU训练时，一定要加 --launcher pytorch 这个参数，要不然是不会用dist_train的方式训练的。
    
-   
+6. 默认情况下是不会evaluate valdata的, 需要加一个--validate。
 
-   
+  
    
    
