@@ -26,3 +26,8 @@
 6. 默认情况下是不会evaluate valdata的, 需要加一个--validate。
 
 7. 内存明明够用却显示不足，可能是因为distribue 训练，没有用对。我改对之后就没有这种情况出现了。
+
+8. cocoapi的源码我改了，在maskrcnn-benchmark上用的时候可以用，但是安装mmdetection之后又变成原代码形式的了，这是为什么？
+   mmdetection自动安装了一个cocoapi, 还得在自己改的位置编译一遍自己的cocoapi代码，python setup.py develop，
+   但是我编译了好几遍都是在其他环境中编译的，所以执行的时候还是原来的源代码。。。
+
