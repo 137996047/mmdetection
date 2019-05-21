@@ -31,4 +31,4 @@
    mmdetection自动安装了一个cocoapi, 还得在自己改的位置编译一遍自己的cocoapi代码，python setup.py develop，
    但是我编译了好几遍都是在其他环境中编译的，所以执行的时候还是原来的源代码。。。
 
-9. inference的时候将图片扩大，框精度会变高的。
+9. inference的时候将图片扩大，框精度会变坏。
